@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Card Calculation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/bootstrap.css" / >
+	<link rel="stylesheet" href="../css/main.css" />
+
+	<script type="text/javascript" src="../js/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="../js/vendor/angular-messages.min.js"></script>
+</head>
+<body ng-app="bestWay">
+	<h1 class="center">Calculate Overtime Earngings and Total Earngins</h1>
+	<div class="paymain" ng-controller="EarningsController">
+		<form name="payrole" ng-submit="calculateEarnings()" novalidate>
+			<div id="total-amount-container" class="form-group">
+				<label name="label-amount" for="totalAmount">Enter Total Amount *</label>
+				<input type="number" name="totalAmount" id="total-amount" class="form-control" ng-model="totalAmount" min="0" required>
+				<div ng-messages="payrole.totalAmount.$error" ng-if="payrole.$submitted" >
+				  <div ng-message="required" class="error">Please enter a valid number</div>
+				</div>
+				<div ng-messages="payrole.totalAmount.$error" ng-if="payrole.$submitted">
+				  <div ng-message="min" class="error">Please enter a valid number</div>
+				</div>
+			</div>
+			<div id="total-hours-container" class="form-group">
+				<label name="label-hours" for="total-hours">Enter Total Hours *</label>
+				<input type="number" name="totalHours" id="totalHours" class="form-control" ng-model="totalHours" required>
+				<div ng-messages="payrole.totalHours.$error" ng-if="payrole.$submitted">
+				  <div ng-message="required" class="error">Please enter a valid number</div>
+				</div>
+			</div>
+			<div id="over-time-container" class="form-group">
+				<label name="label-overtime" for="overTime">Enter Overtime Hours</label>
+				<input type="number" name="overTime" id="overTime" class="form-control" ng-model="overTime">
+			</div>
+			<ernings-results info="results"></ernings-results>
+			<button class="btn btn-default" type="submit">Submit</button>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="../public/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+	<script type="text/javascript" src="../js/controllers/EarningsController.js"></script>
+	<script src="../js/directives/earningsResults.js"></script>
+</body>
+</html>
+
+
+
+
+
