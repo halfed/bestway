@@ -1,0 +1,165 @@
+
+/* VARIABLES */
+$min-height-full: 100%;
+$min-height-semi-full: 88%;
+$off-white: #fcfcfc;
+$h3-font-size: 20px;
+
+/* END VARIABLES */
+
+body, html {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	height: 100%;
+	margin: 0;
+}
+
+
+/* LINKS */
+a {
+	color: #788;
+	font-size: 13px;
+}
+
+
+/* END LINKS */
+
+/* FONTS */
+h3 {
+	font-size: 20px;
+}
+
+.flex-title {
+    /*font-size: 35px;*/
+    font-size: 2.0rem;
+    letter-spacing: 3px;
+    /*font-weight: 100;*/
+    color: #000; /*#fcfcfc;*/
+    margin: 0 0 15px;
+    line-height: 1.3em;
+    font-weight: bold;
+    position: relative;
+    top: 57px;
+    left: -168px;
+}
+
+.sub-categories {
+	p {
+		font-size: 15px;
+		color: #788;
+		margin: 20px 0;
+	}
+
+	h2, h3 {
+		font-weight: bold;
+		color: #5c8ab4;
+	}
+}
+
+.footer {
+	h3 {
+		font-size: $h3-font-size;
+	}
+	p {
+		font-size: 12px;
+	}
+}
+
+/* END FONTS */
+
+/* BACKGROUND IMAGES */
+.home-img-top, .home-img-middle, .home-img-bottom, .home-img-footer {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	/* Styles */
+	.home-img-top, .home-img-middle, .home-img-bottom, .home-img-footer {
+		background-attachment: initial;
+	}
+
+	.flex-title {
+		left: 0;
+	}
+}
+
+.home-img-top {
+	background-image: url("../images/parallax/EnergyEffecientHomesHPwES01.png");
+	min-height: $min-height-full;
+	background-position-y: 10px;
+}
+
+.home-img-middle {
+	background-image: url("../images/parallax/boulder20071.jpg");
+	min-height: $min-height-full;
+	background-position-y: 10px;
+}
+
+.home-img-bottom {
+	background-image: url("../images/parallax/DSC_0328.JPG");
+	min-height: $min-height-full;
+}
+
+.home-img-footer {
+	background-image: url("../images/parallax/credentials.png");
+	min-height: 50%;
+	background-size: initial;
+}
+
+/* END BACKGROUND IMAGES */
+
+/* NAVIGATION */
+.navbar {
+	margin-bottom: 0;
+
+	.navbar-brand {
+		height: auto;
+		padding: 0 15px;
+	}
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #788;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+/* END NAVIGATION */
+
+
+.main {
+	height: 100%;
+}
+
+.paymain {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.results-container {
+	margin-bottom: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+/* FOOTER */
+.footer {
+	background-color: #303030;
+	color: $off-white;
+}
+
+/* END FOOTER */
+
+.section-content {
+	border-bottom: 1px solid black;
+}
+
+@import 'formstyles';
