@@ -1,2 +1,14 @@
 .bowerrc
 bower.json
+main.css
+Gruntfile.js
+.sass-cache/
+css/parallax.css
+css/parallax.css.map
+css/parallax.scss
+node_modules/
+package.json
+parallax.html
+public/
+temp-html-file.html
+css/sprites.css
