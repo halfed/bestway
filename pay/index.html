@@ -9,9 +9,10 @@
 	<script type="text/javascript" src="../js/vendor/angular.min.js"></script>
 	<script type="text/javascript" src="../js/vendor/angular-messages.min.js"></script>
 </head>
-<body ng-app="bestWay">
-	<h1 class="center">Calculate Overtime Earngings and Total Earngins</h1>
+<body ng-app="bestWay" class="payForm">
 	<div class="paymain" ng-controller="EarningsController">
+		<a class="navbar-brand" href="#"><img src="../images/bestway-logo-1.png" /><span class="sr-only">(current)</span></a>
+		<h1 class="left">Calculate Overtime Earngings<br/> and Total Earngins</h1>
 		<form name="payrole" ng-submit="calculateEarnings()" novalidate>
 			<div id="total-amount-container" class="form-group">
 				<label name="label-amount" for="totalAmount">Enter Total Amount *</label>
