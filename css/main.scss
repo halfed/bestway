@@ -11,6 +11,7 @@ body, html {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	height: 100%;
 	margin: 0;
+	background-color: #FEFBF7;
 }
 
 
@@ -18,6 +19,11 @@ body, html {
 a {
 	color: #788;
 	font-size: 13px;
+	text-decoration: none;
+}
+
+.social-icon {
+	display: block;
 }
 
 
@@ -156,10 +162,209 @@ h3 {
 	color: $off-white;
 }
 
+.social-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 43%;
+}
+
 /* END FOOTER */
 
 .section-content {
 	border-bottom: 1px solid black;
 }
 
+
+/*------- FORM STYLES -----------*/
+.payForm {
+	background-color: #9F9F68;
+}
+
 @import 'formstyles';
+@import 'sprites';
+
+
+.equestrian {
+	background-color: #FEFBF7;
+
+	header {
+		display: flex;
+		flex-direction: column;
+
+		h1 {
+			a {
+				font-size: 36px;
+				color: #333333;
+				text-decoration: none;
+			}
+			
+		}
+
+		.header-image {
+			text-align: right;
+			padding-top: 10px;
+		}
+
+		.sub-header {
+			font-size: 1.3rem;
+		    top: -4px;
+		    position: relative;
+		    font-weight: bold;
+		}
+	}
+
+	/*--- nav  ---*/
+	nav {
+		background-color: #999965;
+
+		.container-fluid {
+			width: 100%;
+		}
+	}
+
+	.nav-container {
+		li {
+			margin-right: 10px;
+
+			a {
+				color: #000;
+			}
+			a:hover {
+				color: #ee4e0b;
+			}
+		}
+	}
+
+	.main-nav {
+		margin: 0 0 0 45px;
+
+		ul {
+			li:first-of-type {
+				margin: 10px 0;
+				text-align: left;
+    			padding-left: 20px;
+			}
+
+			li.nav-header {
+				font-weight: bold;
+				padding: 5px 0 5px 10px;
+				background-color: #f5f6f8;
+			}
+
+			li {
+				//border-top: 1px solid black;
+
+				a {
+					padding: 10px 15px 10px 10px;
+				}
+			}
+		}
+	}
+
+	.main-content {
+		margin-bottom: 20px;
+		text-align: center;
+
+		h2 {
+			font-size: 1.9rem;
+		}
+
+		img {
+			border: double;
+		    padding: 10px;
+		    background-color: #999965;
+		    border-radius: 3px;
+		}
+
+		.pedigree-chart {
+			display: flex;
+    		align-items: center;
+
+    		p {
+    			margin: 0 0 10px;
+    		}
+
+    		.ped-fourth-gen {
+    			p {
+    				padding-bottom: 50px;
+    			}
+    		}
+
+    		.ped-fifth-gen {
+    			p{
+    				
+    			}
+    		}
+
+    		.gen-2 {
+    			margin-right: 210px
+    		}
+
+    		.gen-3 {
+    			margin-right: 410px;
+    		}
+
+    		.gen-4 {
+    			margin-right: 610px;
+    			&span::after {
+    				border-top: 1px solid black;
+    			}
+    		}
+
+    		.gen-4::after {
+    			border-top: 1px solid black;
+    		}
+
+    		.gen-5 {
+    			margin-right: 810px;
+    		}
+		}
+	}
+
+	footer {
+		background-color: #232323;
+		color: #FFF;
+
+		a {
+				margin-bottom: 10px;
+				color: #FFF;
+		}
+
+		a:hover {
+				text-decoration: none;
+				color: #FFF;
+		}
+
+		.footer-links {
+			display: flex;
+		    justify-content: space-around;
+		    width: 95%;
+		    margin-bottom: 40px;
+		}
+
+		.social-container {
+			margin-top: 10%;
+			margin-left: -20px;
+		}
+
+		.bottom-nav-links {
+			h3 {
+				text-decoration: underline;
+			}
+
+			display: flex;
+			flex-direction: column;
+		}
+
+		.contact-copyright {
+			font-size: 10px;
+			text-align: center;
+    		border-top: 1px solid black;
+    		padding-top: 5px;
+    		padding-bottom: 5px;
+		}
+	}
+}
+
+
