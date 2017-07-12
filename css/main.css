@@ -3,12 +3,17 @@
 body, html {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  background-color: #FEFBF7; }
 
 /* LINKS */
 a {
   color: #788;
-  font-size: 13px; }
+  font-size: 13px;
+  text-decoration: none; }
+
+.social-icon {
+  display: block; }
 
 /* END LINKS */
 /* FONTS */
@@ -113,9 +118,19 @@ h3 {
   background-color: #303030;
   color: #fcfcfc; }
 
+.social-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 43%; }
+
 /* END FOOTER */
 .section-content {
   border-bottom: 1px solid black; }
+
+/*------- FORM STYLES -----------*/
+.payForm {
+  background-color: #9F9F68; }
 
 .error {
   color: #F00F00; }
@@ -124,5 +139,143 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+.icon-facebook-social-icon {
+  background-image: url(../images/sprite/spritesheet.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px; }
+
+.icon-linkedin-social-icon {
+  background-image: url(../images/sprite/spritesheet.png);
+  background-position: -32px 0px;
+  width: 32px;
+  height: 32px; }
+
+.icon-twitter-social-icon {
+  background-image: url(../images/sprite/spritesheet.png);
+  background-position: 0px -32px;
+  width: 32px;
+  height: 32px; }
+
+.icon-youtube-social-icon {
+  background-image: url(../images/sprite/spritesheet.png);
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon-facebook-social-icon {
+    background-image: url(../images/sprite/sprites.retina@2x.png);
+    background-size: 64px 64px; }
+
+  .icon-linkedin-social-icon {
+    background-image: url(../images/sprite/sprites.retina@2x.png);
+    background-size: 64px 64px; }
+
+  .icon-twitter-social-icon {
+    background-image: url(../images/sprite/sprites.retina@2x.png);
+    background-size: 64px 64px; }
+
+  .icon-youtube-social-icon {
+    background-image: url(../images/sprite/sprites.retina@2x.png);
+    background-size: 64px 64px; } }
+.equestrian {
+  background-color: #FEFBF7;
+  /*--- nav  ---*/ }
+  .equestrian header {
+    display: flex;
+    flex-direction: column; }
+    .equestrian header h1 a {
+      font-size: 36px;
+      color: #333333;
+      text-decoration: none; }
+    .equestrian header .header-image {
+      text-align: right;
+      padding-top: 10px; }
+    .equestrian header .sub-header {
+      font-size: 1.3rem;
+      top: -4px;
+      position: relative;
+      font-weight: bold; }
+  .equestrian nav {
+    background-color: #999965; }
+    .equestrian nav .container-fluid {
+      width: 100%; }
+  .equestrian .nav-container li {
+    margin-right: 10px; }
+    .equestrian .nav-container li a {
+      color: #000; }
+    .equestrian .nav-container li a:hover {
+      color: #ee4e0b; }
+  .equestrian .main-nav {
+    margin: 0 0 0 45px; }
+    .equestrian .main-nav ul li:first-of-type {
+      margin: 10px 0;
+      text-align: left;
+      padding-left: 20px; }
+    .equestrian .main-nav ul li.nav-header {
+      font-weight: bold;
+      padding: 5px 0 5px 10px;
+      background-color: #f5f6f8; }
+    .equestrian .main-nav ul li a {
+      padding: 10px 15px 10px 10px; }
+  .equestrian .main-content {
+    margin-bottom: 20px;
+    text-align: center; }
+    .equestrian .main-content h2 {
+      font-size: 1.9rem; }
+    .equestrian .main-content img {
+      border: double;
+      padding: 10px;
+      background-color: #999965;
+      border-radius: 3px; }
+    .equestrian .main-content .pedigree-chart {
+      display: flex;
+      align-items: center; }
+      .equestrian .main-content .pedigree-chart p {
+        margin: 0 0 10px; }
+      .equestrian .main-content .pedigree-chart .ped-fourth-gen p {
+        padding-bottom: 50px; }
+      .equestrian .main-content .pedigree-chart .gen-2 {
+        margin-right: 210px; }
+      .equestrian .main-content .pedigree-chart .gen-3 {
+        margin-right: 410px; }
+      .equestrian .main-content .pedigree-chart .gen-4 {
+        margin-right: 610px; }
+        .equestrian .main-content .pedigree-chart .gen-4span::after {
+          border-top: 1px solid black; }
+      .equestrian .main-content .pedigree-chart .gen-4::after {
+        border-top: 1px solid black; }
+      .equestrian .main-content .pedigree-chart .gen-5 {
+        margin-right: 810px; }
+  .equestrian footer {
+    background-color: #232323;
+    color: #FFF; }
+    .equestrian footer a {
+      margin-bottom: 10px;
+      color: #FFF; }
+    .equestrian footer a:hover {
+      text-decoration: none;
+      color: #FFF; }
+    .equestrian footer .footer-links {
+      display: flex;
+      justify-content: space-around;
+      width: 95%;
+      margin-bottom: 40px; }
+    .equestrian footer .social-container {
+      margin-top: 10%;
+      margin-left: -20px; }
+    .equestrian footer .bottom-nav-links {
+      display: flex;
+      flex-direction: column; }
+      .equestrian footer .bottom-nav-links h3 {
+        text-decoration: underline; }
+    .equestrian footer .contact-copyright {
+      font-size: 10px;
+      text-align: center;
+      border-top: 1px solid black;
+      padding-top: 5px;
+      padding-bottom: 5px; }
 
 /*# sourceMappingURL=main.css.map */
