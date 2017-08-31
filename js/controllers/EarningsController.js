@@ -1,4 +1,6 @@
 bestway.controller("EarningsController", ['$scope', function($scope) {
+//This is going to be refactored, business logic should go into either services or in a main.js file and then have controller 
+//inject dependency
 	$scope.results = {
 			earnings: 0.00,
 			overtime: 0.00,
